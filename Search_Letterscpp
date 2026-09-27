@@ -1,0 +1,25 @@
+﻿// Search_Letters_Lec_17.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+void Print_Result_Letter()
+{
+    int counter = 0;
+    for (int i = 65; i <= 70; i++)
+    {
+        for (int j = 65; j <= 70; j++)
+        {
+            for (int k = 65; k <= 70; k++)
+            {
+                counter += 1;
+                cout << "Trieler " << counter << " :" << char(i) << char(j) << char(k);
+                cout << endl;
+            }
+        }
+    }
+}
+int main()
+{
+    Print_Result_Letter();
+}
